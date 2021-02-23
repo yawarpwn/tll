@@ -1,0 +1,21 @@
+//Componentes
+@import 'navbar';
+@import 'hero';
+@import 'footer';
+@import 'carousel';
+@import 'burger';
+
+@import './pages/about';
+@import './pages/contacts';
+
+//variables
+@import './variables';
+@import './abstracts/variable';
+
+//reset
+@import './base/reset';
+@import './base/typography';
+
+@import './components/button';
+
+

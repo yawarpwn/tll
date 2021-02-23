@@ -1,0 +1,297 @@
+@import './variables';
+.navbar-container {
+	background: $secondary;
+	color: $white;
+	height: 80px;
+	width: 100%;
+	padding: 15px;
+	z-index: 10;
+	position: static;
+	top: 0;
+	transition: all 0.3s ease;
+	line-height: 10vh;
+
+	@include desktop {
+		background: transparent;
+		padding: 0 $padding-x;
+		align-items: center;
+		position: absolute;
+		top: 0;
+		width: 100%;
+		height: 80px;
+		margin: 0 auto;
+	}
+
+	@include tablet {
+	}
+
+}
+
+.navbar {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	position: static;
+
+	@include desktop {
+		position: relative;
+	}
+
+	&__menu {
+		list-style: none;
+		left: -100%;
+		list-style: none;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		background: $secondary;
+		position: absolute;
+		top: 10vh;
+		left: -100%;
+		width: 80%;
+		min-height:90vh;
+
+		transition: all 0.5s ease-in-out;
+		box-shadow: 0 -2px 5px rgba($secondary, .7);
+
+		&--active {
+			left: 0;
+			height: auto;
+		}
+
+		@include desktop {
+			position: static;
+			flex-direction: row;
+			align-items: center;
+			justify-content: center;
+			background: none;
+			height: 80px;
+			min-height: 80px;
+			padding: 0;
+			transition: none;
+		}
+	}
+
+	&__item {
+		width: 100%;
+
+		@include desktop {
+			width: auto;
+			position: relative;
+			}
+	}
+
+	&__link {
+		position: relative;
+		text-decoration: none;
+		display: flex;
+		align-items: center;
+		color: white;
+		border-bottom: $border-bottom-gray ;
+		padding: 10px 20px;
+		font-size: 13px;
+		font-weight: 600;
+		min-height: 60px;
+		text-transform: uppercase;
+
+		@include desktop {
+			padding: 0 1.2rem;
+			cursor: pointer;
+			border: none;
+			min-height: 40px;
+
+			&:hover {
+				color: $primary;
+				transition: all .2s ease;
+			}
+		}
+		
+	}
+
+
+	&__text {
+		letter-spacing: 1px;
+	}
+
+
+	&__dropdown {
+		position: static;
+		visibility: hidden;
+		opacity: 0;
+		background: #ddd;
+		display: none;
+		list-style: none;
+
+		&--active {
+			visibility: visible;
+			opacity: 1;
+			display: block;
+		}
+
+		@include desktop {
+			position: absolute;
+			display: block;
+			width: 200px;
+			background: $white;
+			margin: 0px 0;
+			border-radius: 4px;
+			box-shadow: 0 0 2px rgba(0, 0, 0, .7)
+
+		}
+	}
+
+	&__dropdown-item {
+	}
+
+
+	&__dropdown-link {
+		position: relative;
+		text-decoration: none;
+		display: flex;
+		align-items: center;
+		color: $secondary;
+		border-bottom: $border-bottom-gray ;
+		padding: 10px 20px;
+		font-size: 13px;
+		font-weight: 600;
+		min-height: 60px;
+
+		@include desktop {
+			&:hover {
+				background: #f2f2f2;
+			}
+		}
+	}
+
+	&__dropdown-text {
+
+	}
+
+	&__icon-sub-menu {
+		border-top: $border-bottom-gray;
+		position: absolute;
+		top: 0;
+		right: 0;
+		width: 60px;
+		height: 60px;
+		text-align: center;
+		line-height: 60px;
+		font-size: 1.2rem;
+		transform: rotate(270deg);
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+
+		&--active {
+			background: $primary;
+			transition: all 0.3s ease-in-out;
+
+			.fa-chevron-down {
+				transform: rotate(90deg);
+				transition: all 0.3s ease;
+			}
+		}
+
+		@include desktop {
+			position: static;
+			transform: rotate(0deg);
+			border: none;
+			width: auto;
+			height: auto;
+			margin-left: 7px;
+		}
+	}
+	
+	&__brand {
+		width: 160px;
+		height: 23px;
+	}
+
+	&__img {
+		display: block;
+		width: 100%;
+		height: 100%;
+	}
+
+	&__user {
+		display: flex;
+	}
+
+	&__toggle {
+		font-size: 1.3rem;
+		cursor: pointer;
+	}
+
+	&__shopping-cart {
+		display: flex;
+		position: relative;
+		margin-right: 5px;
+
+		i {
+			margin-right: 18px;
+		}
+
+		@include desktop {
+			i {
+				margin-right: 30px;
+			}
+		}
+	}
+
+	&__shopping-counter {
+		display: block;
+		width: 18px;
+		height: 18px;
+		background: $primary;
+		border-radius: 50%;
+		position: absolute;
+		text-align: center;
+		line-height: 18px;
+		right: 3px;
+		top: -6px;
+		font-size: 13px;
+
+		@include desktop {
+			right: 5px;
+			top: 0;
+		}
+
+	}
+	
+	@include desktop {
+
+		&__brand {
+			width: 200px;
+			height: 30px;
+			box-shadow: 0, 0, 5px, rgba(0,0, 0,.7);
+		}
+
+		&__item {
+		}
+
+		&__link {
+		}
+
+		&__text {
+			font-weight: bold;
+			&:hover {
+				color: $primary;
+				transition: all 0.3s;
+			}
+		}
+
+		&__icon-sub-menu {
+
+		}
+
+		&__toggle {
+			display: none;
+		}
+	}
+}
+
+.navbar ul li:hover .navbar__dropdown {
+	visibility: visible;
+	opacity: 1;
+}

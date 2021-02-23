@@ -1,0 +1,236 @@
+@import './variables';
+//Slider
+$radio-btn : #fff;
+$shadow-slider: rgb(15, 0, 26);
+.slider {
+	width: 100%;
+	height: 300px;
+	position: relative;
+	overflow: hidden;
+
+	@include desktop {
+		height: 100vh;
+	}
+}
+
+.slides {
+	width: 500%;
+	height: 300px;
+	display: flex;
+
+	@include desktop {
+		height: 100vh;
+	}
+
+	input {
+		display: none;
+	}
+
+	&__slide {
+		width: 20%;
+		transition: 2s;
+		position: relative;
+		z-index: -99;
+
+		&:before {
+			content: '';
+			width: 100%;
+			height: 100%;
+			background: linear-gradient(180deg, 
+									rgba($shadow-slider,.8) 0%, 
+									rgba($shadow-slider, .7) 35%,
+									rgba($shadow-slider, .8) 100%);
+			display: block;
+			z-index: 20;
+			position: absolute;
+			top: 0;
+			left: 0;
+			z-index: 9;
+
+		}
+
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+	}
+
+	//TEXT SLIDER
+	&__text {
+		position: absolute;
+		top: 45%;
+		left: 40%;
+		transform: translate(-50%, -50%);
+		z-index: 11;
+
+		h1 {
+			color: white;
+			font-size: clamp(1rem, 7vw, 3.5rem);
+			text-shadow: 1px 1px 2px black;
+			align-text: center;
+			line-height: 1.1;
+		}
+
+		button {
+			background: $primary;
+			border: none;
+			border-radius: 5px;
+			color: white;
+			padding: 10px 30px;
+			text-transform: uppercase;
+			letter-spacing: 2;
+			font-weight: bold;
+			cursor:pointer;
+
+			&:hover {
+				background: red;
+			}
+			
+		}
+
+		p {
+			color: white;
+			margin: 10px 0;
+			font-size: clamp(0.8rem, 2vw, 1.5rem);
+		}
+
+		@include desktop {
+			top: 55%;
+
+			p {
+				margin: 20px 0;
+			}
+		}
+		
+	}
+
+	//Manual Slider Navigation
+	&__navigation-manual {
+		position: absolute;
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		bottom: 2%;
+	}
+
+	&__manual-btn {
+		display: block;
+		width: 2px;
+		height: 2px;
+		border: 2px solid $radio-btn;
+		padding: 5px;
+		border-radius: 10px;
+		cursor: pointer;
+		transition: 1s;
+
+		&:hover {
+			background: $radio-btn;
+		}
+
+	}
+	
+	&__manual-btn:not(:last-child) {
+		margin-right: 40px;
+	}
+
+	#radio1:checked ~ .first {
+		margin-left: 0;
+	}
+	#radio2:checked ~ .first {
+		margin-left: -20%;
+	}
+	#radio3:checked ~ .first {
+		margin-left: -40%;
+	}
+	#radio4:checked ~ .first {
+		margin-left: -60%;
+	}
+
+	//Automatic Slider Animation
+	&__navigation-auto {
+		position: absolute;
+		display: flex;
+		justify-content: center;
+		width: 100%;
+		bottom: 2%;
+		div {
+			border: 2px solid $radio-btn;
+			padding: 5px;
+			border-radius: 10px;
+			transition: 1s;
+			&:not(:last-child) {
+				margin-right: 40px;
+			}
+		}
+	}
+
+	#radio1:checked ~ .slides__navigation-auto .slides__auto-btn1 {
+		background: $radio-btn;		
+	}
+	#radio2:checked ~ .slides__navigation-auto .slides__auto-btn2 {
+		background: $radio-btn;		
+	}
+	#radio3:checked ~ .slides__navigation-auto .slides__auto-btn3 {
+		background: $radio-btn;		
+	}
+	#radio4:checked ~ .slides__navigation-auto .slides__auto-btn4 {
+		background: $radio-btn;		
+	}
+	
+	
+}
+
+//.todo-slinder-container {
+	//position: relative;
+	//width: 100%;
+//}
+
+//.todo-slinder {
+	//display: flex;
+	//width: 700%;
+	//@include desktop {
+	//}
+	
+	//&__section {
+	//}
+	//&__img {
+		//object-fit: cover;
+	//}
+	
+	//&__tittle {
+	//}
+
+	//&__btn {
+		//position: absolute;
+		//background: rgba(255, 255, 255, 0.5);
+		//width: 30px;
+		//height: 50px;
+		//border-radius: 2px;
+		//top: 50%;
+		//transform: translateY(-50%);
+		//display: block;
+		//z-index: 200;
+		//cursor: pointer;
+		//font-family: monospace;
+		//font-weight: bold;
+		//display: flex;
+		//justify-content: center;
+		//align-items: center;
+
+		//&:hover {
+			//background: rgba(255, 255, 255, 0.8);
+			//transition: all 0.3s;
+		//}
+
+		//&--right {
+			//right: 10px;
+		//}
+
+		//&--left {
+			//left: 10px;
+		//}
+
+	//}
+//}
+

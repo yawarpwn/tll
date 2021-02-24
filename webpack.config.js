@@ -5,6 +5,7 @@ const webpack = require("webpack");
 const path = require("path");
 
 module.exports = {
+  mode: 'development',
   entry: "./src/index.js",
   output: {
     path: path.resolve(__dirname, "./dist"),
@@ -31,11 +32,28 @@ module.exports = {
           },
 
           {
-            loader: 'postcss-loader'
+            loader: 'postcss-loader',
+            options: {
+              postcssOptions: {
+                plugins: [
+                  require('tailwindcss')('./tailwind.config.js'),
+                  require('autoprefixer'),
+                ]
+              }
+            }
+
           },
 
           {
-            loader: 'sass-loader'
+            loader: 'sass-loader',
+            options: {
+              implementation: require("sass"),
+              sassOptions: {
+                fiber: require("fibers"),
+                includePaths: ["./node_modules"],
+              },
+              sourceMap: true,
+            },
           },
         ],
       },

@@ -1,15 +1,16 @@
 //Componentes
-@import 'navbar';
-@import 'hero';
-@import 'footer';
-@import 'carousel';
-@import 'burger';
+@import './components/navbar';
+@import './components/hero';
+@import './components/footer';
+@import './components/carousel';
+@import './components/burger';
+@import './components/slider';
 
 @import './pages/about';
 @import './pages/contacts';
 
 //variables
-@import './variables';
+@import './abstracts/variables';
 @import './abstracts/variable';
 
 //reset

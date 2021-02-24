@@ -77,7 +77,7 @@
 
 		p {
 			margin-top: 0.3rem;
-			font-size: 13px;
+			font-size: 12px;
 		}
 
 	}
@@ -153,12 +153,12 @@
 	justify-content: center;
 
 	&__text1 {
-		font-size: 12px;
+		font-size: 11px;
 		text-align: center;
 	}
 
 	&__text2 {
-		font-size: 12px;
+		font-size: 11px;
 		text-align: center;
 
 		@include desktop {

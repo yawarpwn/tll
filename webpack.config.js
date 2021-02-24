@@ -65,6 +65,9 @@ module.exports = {
       {
       test: /\.(jpe?g|png|gif|svg)$/i,
       loader: "file-loader",
+      options: {
+        outputPath: 'images',
+      }
       },
     ],
   },
@@ -74,13 +77,24 @@ module.exports = {
       title: "Webpack Config",
       template: "./src/index.html",
     }),
+
     new HtmlWebpackPlugin({
       filename: "about.html",
-      title: "Webpack Config",
+      title: "Nosotros",
       template: "./src/about.html",
     }),
 
-    new MiniCssExtractPlugin(),
+    new HtmlWebpackPlugin({
+      filename: "contact.html",
+      title: "Contacto",
+      template: "./src/contact.html",
+    }),
+
+    new MiniCssExtractPlugin(
+      {
+        filename: './css/[name].css' 
+      }
+    ),
     new CleanWebpackPlugin(),
   ],
 };

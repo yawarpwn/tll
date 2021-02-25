@@ -1,0 +1,7 @@
+.wrapper {
+	padding: 1rem;
+
+	@include desktop {
+		padding: 0 $padding-x;
+	}
+}

@@ -1,25 +1,21 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-//Componentes
+//@tailwind base;
+//@tailwind components;
+//@tailwind utilities;
 @import './components/navbar';
 @import './components/hero';
 @import './components/footer';
 @import './components/carousel';
 @import './components/burger';
 @import './components/slider';
+@import './components/button';
 
 @import './pages/about';
 @import './pages/contacts';
 
-//variables
 @import './abstracts/variables';
-@import './abstracts/variable';
 
-//reset
 @import './base/reset';
 @import './base/typography';
 
-@import './components/button';
-
+@import './utilities/utilities';
 

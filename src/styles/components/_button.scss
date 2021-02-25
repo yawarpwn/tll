@@ -2,20 +2,38 @@
     &,
     &:link,
     &:visited {
-        text-transform: uppercase;
-        text-decoration: none;
-        padding: 1.5rem 4rem;
-        border-radius: 3rem;
-        display: inline-block;
-        transition: all .2s ;
-        position: relative;
+			background: $primary;
+			border-radius: 5px;
+			color: white;
+			padding: 10px 30px;
+			text-transform: uppercase;
+			letter-spacing: 1;
+			font-weight: bold;
 
-        border: none;
-        cursor: pointer;
+			cursor:pointer;
+			border: none;
     }
 
     &:hover {
-        transform: translateX(-0.3rem);
-        box-shadow: 0 1rem 2rem rgba(0, 0, 0, .2)
+				border: 1px solid $color-primary;
+				background: transparent;
+				color: $primary;
     }
+
+    &--primary {
+        background: $primary;
+    }
+
+		&--outline {
+				border: 1px solid $color-primary;
+				background: transparent;
+				color: $primary;
+
+				&:hover {
+					background: $color-primary;	
+					color: $color-white;
+				}
+		}
+
+    
 }

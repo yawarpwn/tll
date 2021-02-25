@@ -11,6 +11,7 @@
 	transition: all 0.3s ease;
 	line-height: 10vh;
 
+
 	@include desktop {
 		background: transparent;
 		padding: 0 $padding-x;
@@ -207,6 +208,7 @@
 	&__brand {
 		width: 160px;
 		height: 23px;
+		z-index: 8999;
 	}
 
 	&__img {

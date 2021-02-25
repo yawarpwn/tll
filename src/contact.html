@@ -15,7 +15,7 @@
 </head>
 <body>
   <div class="close-side">
-      <div class="navbar-container" style="background-color: #1f0038;">
+      <div class="navbar-container" style="background-color: #1f0038; position: static;">
         <div class="navbar">
           <div class="navbar__toggle">
             <div class="btn-menu" id="btn-menu">
@@ -126,11 +126,105 @@
         </div>
       </div>
 
-    <section>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum et earum iusto. Dolore optio, in quasi ipsum beatae dolorem corporis hic ex placeat quam itaque provident minus sapiente eligendi, iste praesentium asperiores voluptatum. Quisquam, ex. Sed aspernatur, hic maiores repellendus et cumque odit incidunt quod, asperiores iusto saepe atque animi!
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum et earum iusto. Dolore optio, in quasi ipsum beatae dolorem corporis hic ex placeat quam itaque provident minus sapiente eligendi, iste praesentium asperiores voluptatum. Quisquam, ex. Sed aspernatur, hic maiores repellendus et cumque odit incidunt quod, asperiores iusto saepe atque animi!
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum et earum iusto. Dolore optio, in quasi ipsum beatae dolorem corporis hic ex placeat quam itaque provident minus sapiente eligendi, iste praesentium asperiores voluptatum. Quisquam, ex. Sed aspernatur, hic maiores repellendus et cumque odit incidunt quod, asperiores iusto saepe atque animi!
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum et earum iusto. Dolore optio, in quasi ipsum beatae dolorem corporis hic ex placeat quam itaque provident minus sapiente eligendi, iste praesentium asperiores voluptatum. Quisquam, ex. Sed aspernatur, hic maiores repellendus et cumque odit incidunt quod, asperiores iusto saepe atque animi!
+    <section class="contact-container">
+      <header class="contact-container__header">
+        <figure>
+          <img src="./assets/img/banner-contact.jpg" alt="">
+          <h1 class="contact-container__tittle">Contacta con nosotros</h2>
+        </figure>
+      </header>
+      <div class="wrapper">
+        <div class="contact">
+          <div class="contact__info">
+            <figure>
+              <img src="./assets/img/contacto-tell.jpg"  alt="">
+            </figure>
+            <!--<h2 class="">Contacta con nosotros</h2>-->
+            <!--<p class="">¿Tienes alguna consulta</p>-->
+            <!--<p class="">Av. Argentina 639, Int 196A - Lima - Lima</p>-->
+            <!--<div class="">-->
+              <!--<i class="fab fa-whatsapp"></i>-->
+              <!--<span class="">931 406 027 / 992 536 019</span>-->
+            <!--</div>-->
+            <!--<div class="">-->
+              <!--<i class="far fa-envelope"></i>-->
+              <!--<span>pedidos@tellsenales.com</span>-->
+            <!--</div>-->
+          </div>
+          <div class="contact__form">
+            <h3 style="margin: 1rem 0rem;">¿Tienes algun preguntar?</h3>
+            <div class="contact__content">
+              <div class="contact__wrapper">
+                <div role="form">
+                  <form action="" method="post">
+                    <div class="contact__row flex flex-col md:flex-row">
+                      <div style="margin-bottom: 20px;">
+                        <label for="">
+                          Nombre
+                          <sup style="color:red">*</sup>
+                        </label>
+                        <span>
+                          <input class="contact__input-text" type="text">
+                        </span>
+                      </div>
+                      <div style="margin-bottom: 20px;">
+                        <label for="">
+                          Email
+                          <sup style="color:red">*</sup>
+                        </label>
+                        <span>
+                          <input class="contact__input-text" type="text">
+                        </span>
+                      </div>
+                    </div>
+                    <div class="contact__row">
+                      <div style="margin-bottom: 20px;">
+                        <label for="">
+                          Telefono 
+                          <sup style="color:red">*</sup>
+                        </label>
+                        <span>
+                          <input class="contact__input-text" type="text">
+                        </span>
+                      </div>
+                      <div style="margin-bottom: 20px;">
+                        <label for="">
+                          Empresa 
+                          <sup style="color:red">*</sup>
+                        </label>
+                        <span>
+                          <input class="contact__input-text" type="text">
+                        </span>
+                      </div>
+                    </div>
+                    <div class="contact__row">
+                      <div style="margin-bottom: 20px;">
+                        <label for="">
+                          Tu Mensaje 
+                          <sup style="color:red">*</sup>
+                        </label>
+                        <span>
+                          <textarea class="contact__input-textarea" name="" id="" cols="40" rows="10"></textarea>
+                        </span>
+                      </div>
+                      <p class="">
+                      <input class="btn btn--outline" type="submit" value="Enviar pregunta">
+                      </p>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="contact-container__inf">
+          <p>Estamos aquí para ayudarte, si quieres que te aconsejemos o necesitas medidas especiales...</p>
+          <p>Llámanos : 992 536 019 / 931 406 027</p>
+          <p>Lunes a viernes de 9:00 a  19:00 h.</p>
+          <p>info@tellsenales.com</p>
+          <button class="btn">contacta con nosotros</button>
+        </div>
+      </div>
     </section>
     <!--Footer-->
     <footer>

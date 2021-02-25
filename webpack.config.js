@@ -3,6 +3,7 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const webpack = require("webpack");
 const path = require("path");
+const FaviconsWebpackPlugin = require('favicons-webpack-plugin')
 
 module.exports = {
   mode: 'development',
@@ -63,7 +64,7 @@ module.exports = {
         loader: "html-loader",
       },
       {
-      test: /\.(jpe?g|png|gif|svg)$/i,
+      test: /\.(jpe?g|png|gif|svg|ico)$/i,
       loader: "file-loader",
       options: {
         outputPath: 'images',
@@ -82,6 +83,7 @@ module.exports = {
       filename: "about.html",
       title: "Nosotros",
       template: "./src/about.html",
+      favicon: './src/assets/favicons/logo.png',
     }),
 
     new HtmlWebpackPlugin({

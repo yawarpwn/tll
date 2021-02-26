@@ -1,18 +1,6 @@
-.footer-container {
-	width: 100%;
-	margin-top: 0.8rem;
-	z-index: -100;
-
-	&__tittle {
-		text-align: center;
-		font-weight: 400;
-		color: gray;
-		letter-spacing: 1px;
-	}
-}
 
 .footer-logos {
-	padding: 0.5rem $padding-x;
+	padding: 1rem 0;
 
 	&__container {
 		display: grid;
@@ -46,17 +34,19 @@
 }
 
 .main-footer {
-	background: $secondary;
-	padding: 2rem 10px;
-	color: $white;
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	gap: 1rem;
-	margin: 0 auto;
+		background: $color-secondary;
+		padding: 3rem 0;
+	&__content {
+		color: $white;
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 1rem;
+		margin: 0 auto;
 
-	@include desktop {
-		grid-template-columns: 1fr 1fr 2fr;
-		padding: 3rem $padding-x;
+		@include desktop {
+			grid-template-columns: 1fr 1fr 2fr;
+		}
+
 	}
 
 	&__info {
@@ -72,12 +62,15 @@
 	}
 
 	&__datos {
-		margin-top: 1rem;
 		padding-bottom: 10px;
 
 		p {
 			margin-top: 0.3rem;
 			font-size: 12px;
+		}
+
+		h5 {
+			font-size: 1rem;
 		}
 
 	}

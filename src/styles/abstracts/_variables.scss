@@ -38,6 +38,7 @@ $color-secondary-dark: #ff7730;
 
 $color-gray-light-1: #f7f7f7;
 $color-gray-light-2: #eee;
+$color-gray-light-3: #ddd;
 
 $color-gray-dark-1: #777;
 $color-gray-dark-2: #999;
@@ -56,7 +57,7 @@ $gutter-horizontal: 6rem;
 
 //Media Queries
 @mixin tablet {
-	@media screen and (min-width: 375px) {
+	@media screen and (max-width: 768px) {
 		@content;
 	}
 };

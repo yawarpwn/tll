@@ -1,11 +1,11 @@
 .wrapper {
-	padding: 1rem;
+	padding: 0 1rem;
 
 	@include desktop {
 		padding: 0 $padding-x;
 	}
 
 	@include tablet {
-		padding: 1.5rem;
+		padding: 0 1rem;
 	}
 }

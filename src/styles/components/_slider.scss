@@ -29,7 +29,6 @@ $shadow-slider: rgb(15, 0, 26);
 		width: 20%;
 		transition: 2s;
 		position: relative;
-		z-index: -99;
 
 		&:before {
 			content: '';
@@ -71,23 +70,6 @@ $shadow-slider: rgb(15, 0, 26);
 			line-height: 1.1;
 		}
 
-		button {
-			background: $primary;
-			border: none;
-			border-radius: 5px;
-			color: white;
-			padding: 10px 30px;
-			text-transform: uppercase;
-			letter-spacing: 2;
-			font-weight: bold;
-			cursor:pointer;
-
-			&:hover {
-				background: red;
-			}
-			
-		}
-
 		p {
 			color: white;
 			margin: 10px 0;
@@ -111,6 +93,7 @@ $shadow-slider: rgb(15, 0, 26);
 		display: flex;
 		justify-content: center;
 		bottom: 2%;
+		z-index: 50;
 	}
 
 	&__manual-btn {

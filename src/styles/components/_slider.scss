@@ -61,7 +61,11 @@ $shadow-slider: rgb(15, 0, 26);
 		left: 40%;
 		transform: translate(-50%, -50%);
 		z-index: 11;
+		width: 70%;
 
+		@include desktop {
+			width: auto;
+		}
 		h1 {
 			color: white;
 			font-size: clamp(1rem, 7vw, 3.5rem);
@@ -80,10 +84,19 @@ $shadow-slider: rgb(15, 0, 26);
 			top: 55%;
 
 			p {
-				margin: 20px 0;
+				margin: 8px 0;
 			}
 		}
 		
+	}
+
+	&__buttons {
+		margin-top: 1rem;
+
+		@include desktop {
+			margin-top: 2rem;
+
+		}
 	}
 
 	//Manual Slider Navigation

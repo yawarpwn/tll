@@ -1,10 +1,10 @@
 const menu = document.getElementById('navbar-menu');
 const burgerBtn = document.getElementById('btn-menu')
-const closeSide = document.querySelector('.close-side')
+const websideDark = document.querySelector('.webside')
 
 const mobileMenu = () => {
   menu.classList.toggle('navbar__menu--active')
-  closeSide.classList.toggle('close-side--active')
+  websideDark.classList.toggle('webside--dark')
   burgerBtn.classList.toggle('btn-menu--active')
 }
 

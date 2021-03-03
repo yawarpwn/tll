@@ -27,6 +27,9 @@ const devConfig = {
             }
           },
           {
+            loader: 'resolve-url-loader', options: { sourceMap: true }
+          },
+          {
             loader: 'postcss-loader',
             options: {
               postcssOptions: {

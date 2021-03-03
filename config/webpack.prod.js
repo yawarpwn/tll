@@ -31,6 +31,9 @@ const prodConfig = {
             }
           },
           {
+            loader: 'resolve-url-loader', options: { sourceMap: true }
+          },
+          {
             loader: 'postcss-loader',
             options: {
               postcssOptions: {

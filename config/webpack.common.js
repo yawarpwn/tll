@@ -1,6 +1,5 @@
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
-const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const webpack = require("webpack");
 const path = require("path");
 
@@ -21,51 +20,6 @@ module.exports = {
   },
   module: {
     rules: [
-      {
-        test: /\.(css|scss)$/,
-        use: [
-          //{
-            //loader: MiniCssExtractPlugin.loader,
-            //options: {
-              //publicPath: '',
-            //}
-          //},
-          {
-            loader: 'style-loader',
-          },
-          {
-            loader: 'css-loader',
-            options: {
-              sourceMap: true,
-              url: true,
-            }
-          },
-          {
-            loader: 'postcss-loader',
-            options: {
-              postcssOptions: {
-                plugins: [
-                  require('tailwindcss')('./tailwind.config.js'),
-                  require('autoprefixer'),
-                ]
-              }
-            }
-          },
-
-
-          {
-            loader: 'sass-loader',
-            options: {
-              implementation: require("sass"),
-              sassOptions: {
-                fiber: require("fibers"),
-                includePaths: ["./node_modules"],
-              },
-              sourceMap: true,
-            },
-          },
-        ],
-      },
 
       {
         test: /\.html$/i,
@@ -131,12 +85,6 @@ module.exports = {
       title: "Contacto",
       template: "./src/contact.html",
     }),
-
-    new MiniCssExtractPlugin(
-      {
-        filename: './css/[name].css' 
-      }
-    ),
     new CleanWebpackPlugin(),
   ],
 };

@@ -14,23 +14,32 @@ module.exports = {
   },
   resolve: {
     extensions: [".tsx", ".ts", ".js", ".jsx"],
+
+    alias: {
+      "img": path.resolve(__dirname, 'src/assets/img')
+    }
   },
   module: {
     rules: [
       {
-        test: /\.scss$/,
+        test: /\.(css|scss)$/,
         use: [
+          //{
+            //loader: MiniCssExtractPlugin.loader,
+            //options: {
+              //publicPath: '',
+            //}
+          //},
           {
-            loader: MiniCssExtractPlugin.loader,
+            loader: 'style-loader',
           },
-
           {
             loader: 'css-loader',
             options: {
               sourceMap: true,
+              url: true,
             }
           },
-
           {
             loader: 'postcss-loader',
             options: {
@@ -41,8 +50,8 @@ module.exports = {
                 ]
               }
             }
-
           },
+
 
           {
             loader: 'sass-loader',
@@ -62,13 +71,18 @@ module.exports = {
         test: /\.html$/i,
         loader: "html-loader",
       },
+      //{
+        //type: 'asset',
+        //test: /\.(jpg|jpeg|png|gif|svg)$/,
+      //},
       {
         test: /\.(jpe?g|png|gif|svg|ico)$/i,
         use: [
           {
             loader: 'file-loader',
             options: {
-              outputPath: 'images',
+              name: 'img/[name].[ext]', 
+              useRelativePaths: true, 
             }
           },
           {

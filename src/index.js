@@ -5,3 +5,5 @@ import './js/slider'
 import './js/navbar'
 import './js/carousel'
 
+import './styles/test.css'
+

@@ -16,10 +16,18 @@
   //stagger: 0.122
 //})
 
-//gsap.from('.animate-img', {
-  //scrollTrigger: '.animate-img',
-  //duration: 1.2,
-  //opacity: 0,
-  //x: -200,
-//})
+gsap.from('.animate-img', {
+  scrollTrigger: '.team',
+  duration: 1.2,
+  opacity: 0,
+  x: -200,
+})
+
+gsap.from('.animate-img-second', {
+  scrollTrigger: '.team',
+  duration: 1.2,
+  opacity: 0,
+  x: 200,
+})
+
 

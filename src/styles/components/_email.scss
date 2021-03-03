@@ -1,0 +1,84 @@
+//.email {
+    //background: linear-gradient(to right, 
+    //rgba(0, 0, 0, .4),
+    //rgba(0, 0, 0, .7),
+    //url('../../assets/img/hero-bg.jpg')
+    //);
+//}
+
+
+.email {
+    margin: 3rem 0;
+    padding: 5rem 0;
+    background: linear-gradient(
+    180deg, 
+    rgba(0, 0, 0, .6) 0%,
+    rgba(0,0,0, .6) 35%,
+    rgba(0,0,0, .3) 100%,
+    ),
+    url(./banner-blog.min.jpg);
+    height: 450px;
+    width: 100%;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &__container {
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    h1 {
+        text-align: center;
+        font-size: clamp(1rem, 5vw, 3rem);
+        color: #fff;
+        margin-bottom: 1rem;
+    }
+
+    p {
+        text-align: center;
+        font-size: clamp(1rem, 2.5vw, 1.5rem);
+        padding: 0 1rem;
+        margin-bottom: 2rem;
+    }
+
+    .form__wrap {
+        display: flex;
+        flex-direction: column;
+
+        @include desktop {
+            flex-direction: row;
+        }
+    }
+
+
+    form {
+        z-index: 10;
+    }
+
+    input {
+        width: 100%;
+        padding: 12px 30px;
+        border-radius: 4px;
+        border: none;
+        outline: none;
+        height: 45px;
+        width: 350px;
+    }
+
+    button {
+        margin-top: 1rem;
+        width: 350px;
+
+        @include desktop {
+            margin-top: 0;
+            margin-left: 1rem;
+        }
+    }
+    
+}

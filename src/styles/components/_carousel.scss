@@ -45,13 +45,13 @@
 .slick h4{
     position: absolute;
     z-index: 1;
-    font-size: 22px;
+    font-size: 20px;
     line-height: 23px;
     color: #fff;
     padding: 5px 10px;
     bottom: 0; 
 
-    background: rgba(0, 0, 0, .3);
+    background: rgba($color-secondary, 0.6);
     border-radius: 4px;
     width: 205px;
     margin: 0 auto;

@@ -1,25 +1,23 @@
 .contact-container {
-
     &__header {
-        height: 350px;
-        max-width: 100%;
-        vertical-align: top;
-        position: relative;
-    }
+        background: linear-gradient(
+        180deg, 
+        rgba($color-thirdy, .6) 0%,
+        rgba($color-thirdy, .6) 35%,
+        rgba($color-thirdy, .3) 100%,
+        ), url(../../assets/img/banner-contact.jpg) no-repeat center center;
+        background-size: cover;
+        height: 250px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 3rem;
 
-    &__tittle {
-       position: absolute; 
-       top: 50%; 
-       left: 50%;
-       transform: translate(-50%, -50%);
-       color: $color-white;
-       text-transform: uppercase;
-       font-size: clamp(2rem, 8vw, 3rem);
-       text-align: center;
-    }
-
-    img {
-        object-fit: cover;
+        h1 {
+            color: #fff;
+            font-size: clamp(2rem, 3vw, 3rem);
+            text-align: center;
+        }
     }
 
     &__inf {
@@ -109,6 +107,27 @@
 
         &:focus{outline: none;}
     }
+
+    p {
+    }
+
+    &__input-submit {
+        height: 35px;
+        width: 100%;
+        background: $color-thirdy;
+        color: $color-secondary;
+        border: none;
+        outline: none;
+        font-size: 1rem;
+        cursor: pointer;
+        font-weight: 400;
+        transition: all 0.3s;
+
+        &:hover {
+            background: darkorange;
+        }
+    }
+
 
     &__input-textarea {
         margin-top: 0.5rem;

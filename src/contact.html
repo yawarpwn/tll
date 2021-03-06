@@ -13,11 +13,32 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
   <title>TELL SEÑALES | SEGURIDAD</title>
 
+  <!-- Facebook Pixel Code -->
+  <script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '2497905953844748');
+  fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=2497905953844748&ev=PageView&noscript=1"
+  /></noscript>
+  <!-- End Facebook Pixel Code -->
 </head>
 <body>
   <div class="close-side">
     <div class="webside"></div>
-    <div class="navbar-container" style="background-color: #1f0038;">
+    <div class="navbar-container" 
+         style="
+         background-color: #1f0038;
+         position: sticky;
+         }">
       <div class="wrapper">
         <div class="navbar">
           <div class="navbar__toggle">
@@ -130,22 +151,22 @@
     </div>
 
     <section class="contact-container">
-      <header class="contact-container__header">
-        <figure>
-          <img src="./assets/img/banner-contact.jpg" alt="">
-          <h1 class="contact-container__tittle">Contacta con nosotros</h2>
-        </figure>
-      </header>
-      <div class="wrapper">
-        <div class="contact">
-          <div class="contact__info">
-            <figure>
-              <img src="./assets/img/contacto-tell.jpg"  alt="">
-            </figure>
-          </div>
-          <div class="contact__form">
-            <h3 style="margin: 1rem 0rem;">¿Tienes algun preguntar?</h3>
-            <div class="contact__content">
+      <div class="contact-container__header">
+        <div class="wrapper">
+          <h1>Contacta con nosotros</h1>
+        </div>
+      </div> 
+      <div>
+        <div class="wrapper">
+          <div class="contact">
+            <div class="contact__info">
+              <figure>
+                <img src="./assets/img/contacto-tell.jpg"  alt="">
+              </figure>
+            </div>
+            <div class="contact__form">
+              <h3 style="margin: 1rem 0rem;">¿Tienes algun preguntar?</h3>
+              <div class="contact__content">
                 <div role="form">
                   <form action="" method="post">
                     <div class="contact__row flex flex-col md:flex-row">
@@ -189,21 +210,22 @@
                           <textarea class="contact__input-textarea" name="" id="" cols="40" rows="10"></textarea>
                         </span>
                       </div>
-                      <p class="">
-                      <input class="btn" type="submit" value="Enviar pregunta">
+                      <p class="" style="width: 100%;">
+                      <input class=" contact__input-submit" type="submit" value="Enviar pregunta">
                       </p>
                     </div>
                   </form>
                 </div>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="contact-container__inf">
-          <p>Estamos aquí para ayudarte, si quieres que te aconsejemos o necesitas medidas especiales...</p>
-          <p>Llámanos : 971 531 018 / 992 536 019</p>
-          <p>Lunes a viernes de 9:00 a  19:00 h.</p>
-          <p>tellsenales@gmail.com</p>
-          <button class="btn btn--secondary">contacta con nosotros</button>
+          <div class="contact-container__inf">
+            <p>Estamos aquí para ayudarte, si quieres que te aconsejemos o necesitas medidas especiales...</p>
+            <p>Llámanos : 971 531 018 / 992 536 019</p>
+            <p>Lunes a viernes de 9:00 a  19:00 h.</p>
+            <p>tellsenales@gmail.com</p>
+            <button class="btn btn--secondary">contacta con nosotros</button>
+          </div>
         </div>
       </div>
     </section>
@@ -291,7 +313,7 @@
             </div> 
             <div class="main-footer__info">
               <div class="main-footer__datos">
-                <h5>CÁTALOGOS 2021</h5> 
+                <h5 class="main-footer__catalogo-titulo">CÁTALOGOS 2021</h5> 
                 <div class="catalogo-footer">
                   <a class="catalogo-footer__item"
                      href="https://drive.google.com/file/d/1EALr_ozzVaWCHRwE3sj7jnTW_DszfOA-/view?usp=sharing"

@@ -47,16 +47,16 @@
     z-index: 1;
     font-size: 18px;
     line-height: 23px;
-    color: $color-secondary;
+    color: #fff;
     padding: 5px 10px;
     bottom: 0; 
 
-    background: rgba(orange, 0.7);
+    background: rgba(orange, 0.8);
     border-radius: 4px;
     width: 205px;
     margin: 0 auto;
 
-    //text-shadow: 1px 1px 5px  rgba(0, 0, 0, .8);
+    text-shadow: 1px 1px 3px  rgba(0, 0, 0, .4);
 }
 .slick h4 small{
     font-size: 15px;

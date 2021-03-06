@@ -80,6 +80,24 @@
         }
     }
 
+    &--thirdy {
+        background: transparent;
+        color: $color-thirdy;
+        border: 3px solid $color-thirdy;
+
+        &:hover {
+          color: $color-secondary;
+          border-color: $color-thirdy;
+
+          &:before {
+            opacity: 1;
+            background-color: $color-thirdy;
+            transform: rotate3d(0, 0, 1, 0deg);
+            transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+          }
+        }
+    }
+
     &--email {
       max-width: 100%;
       width: 100%;

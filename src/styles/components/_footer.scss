@@ -115,6 +115,14 @@
 
 	}
 
+	&__catalogo-titulo {
+		color: orange;
+
+		@include desktop {
+			color: #fff;
+		}
+	}
+
 	&__visa-container {
 		display: none;
 
@@ -191,7 +199,7 @@
 		}
 	}
 
-	&__info:last-child {
+	&__info {
 	}
 
 	&__map {

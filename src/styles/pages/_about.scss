@@ -1,10 +1,94 @@
 .about {
+    
+  &__header {
+    background: linear-gradient(
+    180deg, 
+    rgba($color-thirdy, .6) 0%,
+    rgba($color-thirdy, .6) 35%,
+    rgba($color-thirdy, .3) 100%,
+    ), url(../../assets/img/todos.jpg) no-repeat center;
+    background-size: cover;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3rem;
+    
+
+    h1 {
+        color: #fff;
+        font-size: clamp(2.5rem, 3vw, 3rem);
+        text-align: center;
+
+    }
+  }  
+
+  &__body {
+      margin-bottom: 3rem;
+
+      @include desktop {
+          display: flex;
+          align-items: center;
+      }
+
+      p {
+          text-align: justify;
+          color: $color-gray-dark-3;
+
+          @include desktop {
+              padding: 2rem;
+              width: 60%;
+          }
+      }
+  }
+
+  figure {
+      margin-top: 2rem;
+
+      @include desktop {
+          padding: 2rem;
+          margin-top: 0;
+          width: 40%;
+      }
+  }
+
+  img {
+      width: 100%;
+      height: auto;
+      border-radius: 5px;
+      object-fit: cover;
+
+      @include desktop {
+          height: 100%;
+          
+      }
+  }
 
 }
 
 .adelante {
-    background: #222;
-    padding: 0 3rem;
-    color: red;
-    height: 300px;
+    margin-bottom: 3rem;
+    padding: 5rem 0;
+    background: $color-secondary;
+    color: #fff;
+    text-align: center;
+    
+
+    &__content {
+        
+    }
+
+    h1 {
+        color: #fff;
+        font-size: clamp(2rem, 2.5vw, 2.5rem);
+    }
+
+    p {
+        margin-bottom: 2rem;
+        padding: 0 2rem;
+
+        @include desktop {
+        padding: 0 8rem;
+        }
+    }
 }

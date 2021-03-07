@@ -70,20 +70,20 @@ module.exports = {
     new HtmlWebpackPlugin({
       filename: "index.html",
       title: "Webpack Config",
-      template: "./src/index.html",
+      template: path.resolve((__dirname, '../', './src/public/index.html')),
     }),
 
     new HtmlWebpackPlugin({
       filename: "about.html",
       title: "Nosotros",
-      template: "./src/about.html",
-      favicon: './src/assets/favicons/logo.png',
+      template: path.resolve((__dirname, '../', './src/public/about.html')),
+      favicon: path.resolve((__dirname, '../', './src/assets/favicons/logo.png')),
     }),
 
     new HtmlWebpackPlugin({
       filename: "contact.html",
       title: "Contacto",
-      template: "./src/contact.html",
+      template: path.resolve((__dirname, '../', './src/public/contact.html')),
     }),
     new CleanWebpackPlugin(),
   ],

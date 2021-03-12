@@ -30,14 +30,14 @@
   src="https://www.facebook.com/tr?id=2497905953844748&ev=PageView&noscript=1"
   /></noscript>
   <!-- End Facebook Pixel Code -->
+
 </head>
 <body>
   <div class="close-side">
     <div class="webside"></div>
-    <div class="navbar-container" 
-         style="background-color: #1f0038;
-                position: sticky;
-         ">
+
+    <!--Navbar-->
+    <div class="navbar-container" id="navbar">
       <div class="wrapper">
         <div class="navbar">
           <div class="navbar__toggle">
@@ -48,7 +48,7 @@
             </div>
           </div>
           <a href="index.html" class="navbar__brand">
-            <img src="./assets/img/tell-logo.png" alt="logo-tell-señales" class="navbar__logo">
+            <img src="../assets/img/tell-logo.png" alt="logo-tell-señales" class="navbar__logo">
           </a>
           <ul class="navbar__menu" id="navbar-menu">
             <li class="navbar__item">
@@ -148,51 +148,38 @@
         </div>
       </div>
     </div>
-    <section class="about">
-      <div class="about__header">
-        <div class="wrapper">
-          <h1>Sobre Tell Señales</h1>
+    <!--End Navbar-->
+    <section class="sticker">
+        <div class="sticker__header">
+          <h1>Pegatinas de seguridad</h1>
         </div>
-      </div>
-      <div class="about__main">
-        <div class="wrapper">
-          <h2 class="tittle-sections" style="margin-top: -2rem;">Conócenos</h2>
-          <div class="about__body">
-            <p>Desde la formación de TELL SEÑALES asumimos muchos retos, desarrollando
-            productos de calidad y duraderos, tratando siempre de innovar con creatividad.
-            <br style="line-height: 2;">
-            <br style="line-height: 2;">
-            Cada trabajo que realizamos hasta el día de hoy se ha podido culminar de manera
-            satisfactoria gracias al compromiso de cada uno de nuestros colaboradores,
-            a la confianza de nuestros clientes y sobre todo gracias a una filosofía de trabajo
-            orientada hacia la calidad y la innovación. 
-            <br style="line-height: 2;">
-            <br style="line-height: 2;">
-            Es así como alimentamos nuestra energía para seguir desarrollando la cultura del 
-            reconocimiento, promoviendo los actos y eventos que se corresponden con el agradecimiento
-            que nuestros clientes –personas e instituciones- saben brindar a quienes por su talento,
-            perfomance y muchas otras cualidades positivas han brillado frente a sus empleadores.
-            Por ello estamos obligados a corresponder a todos los clientes que han confiado en nosotros,
-            motivándonos siempre a mejorar, a ser un gran equipo con un gran compromiso.</p>
-            <figure>
-              <img src="./assets/img/about.png" alt="">
-            </figure>
-          </div>
-        </div>
-      </div>
-      <div class="adelante">
-        <div class="wrapper">
-          <div class="adelante__content">
-            <h1>Adelante, Descubrelo</h1>
-            <p>Quién mejor puede hablar de nosotros mismos son nuestros proyectos, en todos y cada uno de ellos damos lo máximo de nosotros mismos.</p>
-            <a href="#">
-              <button class="btn btn--secondary">Portafolio</button>
-            </a>
+    </section>
+
+    
+    <!--Email Section-->
+    <section class="email">
+      <div class="wrapper">
+        <div class="email__container">
+          <div class="email__content">
+            <h1>Juntos vencemos en esta lucha</h1>
+            <p>Registrate para nuestro boletín informativo, recibirás en tu correo información detallada de productos de tu interés</p>
+            <form action="#">
+              <div class="form__wrap">
+                <label for="email">
+                  <input type="email" placeholder="Tu correo" id="email" >
+                </label>
+                  <a href="">
+                    <button class="btn btn--secondary btn--email" type="submit">Enviar</button>
+                  </a>
+              </div>
+            </form>
           </div>
         </div>
       </div>
     </section>
-
+    <!--Email Section End-->
+   
+    <!--Footer Section-->
     <div class="footer-logos">
       <div class="wrapper">
         <div class="footer-logos__tittle">
@@ -200,19 +187,19 @@
         </div>
         <div class="footer-logos__container">
           <div class="footer-logos__img">
-            <img src="./assets/img/indeci_log.png" alt="">
+            <img src="../assets/img/indeci_log.png" alt="">
           </div>
           <div class="footer-logos__img">
-            <img src="./assets/img/log_indecopi.png" alt="">
+            <img src="../assets/img/log_indecopi.png" alt="">
           </div>
           <div class="footer-logos__img">
-            <img src="./assets/img/mtc_log.png" alt="">
+            <img src="../assets/img/mtc_log.png" alt="">
           </div>
           <div class="footer-logos__img">
-            <img src="./assets/img/ntp_log.png" alt="">
+            <img src="../assets/img/ntp_log.png" alt="">
           </div>
           <div class="footer-logos__img">
-            <img src="./assets/img/muni_log.png" alt="">
+            <img src="../assets/img/muni_log.png" alt="">
           </div>
         </div> 
       </div>
@@ -277,14 +264,14 @@
             </div> 
             <div class="main-footer__info">
               <div class="main-footer__datos">
-                <h5>CÁTALOGOS 2021</h5> 
+                <h5 class="main-footer__catalogo-titulo">CÁTALOGOS 2021</h5> 
                 <div class="catalogo-footer">
                   <a class="catalogo-footer__item"
                      href="https://drive.google.com/file/d/1EALr_ozzVaWCHRwE3sj7jnTW_DszfOA-/view?usp=sharing"
                      target="blank"
                      >
                      <figure>
-                       <img src="./assets/img/caratula-catalogo.png" alt="Catalogo Señales">
+                       <img src="../assets/img/caratula-catalogo.png" alt="Catalogo Señales">
                      </figure>
                     <span>Covid</span>
                   </a>
@@ -293,7 +280,7 @@
                      target="blank"
                      >
                      <figure>
-                       <img src="./assets/img/caratula-catalogo-3.png" alt="Catalogo Señales">
+                       <img src="../assets/img/caratula-catalogo-3.png" alt="Catalogo Señales">
                      </figure>
                     <span>Señales</span>
                   </a>
@@ -302,7 +289,7 @@
                      target="blank"
                      >
                      <figure>
-                       <img src="./assets/img/caratula-catalogo-2.png" alt="Catalogo Señales">
+                       <img src="../assets/img/caratula-catalogo-2.png" alt="Catalogo Señales">
                      </figure>
                     <span>EPP</span>
                   </a>
@@ -313,22 +300,22 @@
                   <h5>MEDIOS DE PAGO</h5> 
                   <div class="main-footer__visa"> 
                     <figure>
-                      <img src="./assets/img/visa/bcp.png" alt="bcp">
+                      <img src="../assets/img/visa/bcp.png" alt="bcp">
                     </figure>
                     <figure>
-                      <img src="./assets/img/visa/bbva.png" alt="bbva">
+                      <img src="../assets/img/visa/bbva.png" alt="bbva">
                     </figure>
                     <figure>
-                      <img src="./assets/img/visa/interbank.png" alt="interbank">
+                      <img src="../assets/img/visa/interbank.png" alt="interbank">
                     </figure>
                     <figure>
-                      <img src="./assets/img/visa/scotia.png" alt="scotiabank">
+                      <img src="../assets/img/visa/scotia.png" alt="scotiabank">
                     </figure>
                     <figure>
-                      <img src="./assets/img/visa/visa.png" alt="visa">
+                      <img src="../assets/img/visa/visa.png" alt="visa">
                     </figure>
                     <figure>
-                      <img src="./assets/img/visa/master.png" alt="master card">
+                      <img src="../assets/img/visa/master.png" alt="master card">
                     </figure>
                   </div>
                 </div>
@@ -348,7 +335,9 @@
         <span class="footer-copy__text2">Prohibida la reproducción parcial o total del contenido de este Sitio Web.</span>
       </div>
     </footer>
-
+    <!--Footer Section End-->
+    
+    <!--Social Menu-->
     <div class="social-menu">
       <ul>
         <li>
@@ -363,8 +352,7 @@
         </li>
       </ul>
     </div>
+    <!--Social Menu End-->
   </div>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script>
 </body>
 </html>

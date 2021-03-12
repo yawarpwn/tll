@@ -85,6 +85,15 @@ module.exports = {
       title: "Contacto",
       template: path.resolve((__dirname, '../', './src/public/contact.html')),
     }),
+
+
+    new HtmlWebpackPlugin({
+      filename: "sticker.html",
+      title: "Sticker",
+      template: path.resolve((__dirname, '../', './src/public/sticker.html')),
+    }),
+
+
     new CleanWebpackPlugin(),
   ],
 };

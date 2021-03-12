@@ -1,4 +1,3 @@
-
 //gsap.registerPlugin(ScrollTrigger);
 
 //gsap.from('.animate-hero', {

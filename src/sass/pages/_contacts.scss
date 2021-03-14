@@ -1,16 +1,10 @@
 @import '../utilities/utilities';
-$header-bg-color:linear-gradient(180deg, 
-    rgba($color-thirdy, .8) 0%,
-    rgba($color-thirdy, .6) 35%,
-    rgba($color-thirdy, .2) 100%,
-    );
+
 .header-bg-contact {
     background:$header-bg-color, url(../../assets/img/banner-contact.jpg) no-repeat center;
     background-size: cover;
 }
-.wrrr {
-    @include header-section;
-}
+
 .contact-container {
 
     &__inf {

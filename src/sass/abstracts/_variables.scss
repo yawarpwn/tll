@@ -1,8 +1,4 @@
 
-$font-family: 'Poppins', sans-serif; 
-$padding-x :calc((100vw - 1200px)/2);
-$border-bottom-gray : 1px solid rgba(129, 129, 129, 0.2);
-$border-gray : 1px solid rgba(129, 129, 129, 0.5);
 //Colors
 $blue:    #0d6efd !default;
 $indigo:  #6610f2 !default;
@@ -70,3 +66,12 @@ $gutter-horizontal: 6rem;
 	}
 };
 
+$font-family: 'Poppins', sans-serif; 
+$padding-x :calc((100vw - 1200px)/2);
+$border-bottom-gray : 1px solid rgba(129, 129, 129, 0.2);
+$border-gray : 1px solid rgba(129, 129, 129, 0.5);
+$header-bg-color:linear-gradient(180deg, 
+    rgba($color-thirdy, .8) 0%,
+    rgba($color-thirdy, .6) 35%,
+    rgba($color-thirdy, .2) 100%,
+    );

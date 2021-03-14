@@ -33,6 +33,6 @@ const btnDown2 = (e) => {
 btnLink2.addEventListener('click', btnDown2)
 
 window.addEventListener('scroll', () => {
-  let navbar = document.querySelector('.navbar-container')
+  let navbar = document.querySelector('.navbar')
   navbar.classList.toggle('sticky', window.scrollY > 0)
 })

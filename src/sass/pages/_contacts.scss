@@ -1,29 +1,17 @@
 @import '../utilities/utilities';
-
+$header-bg-color:linear-gradient(180deg, 
+    rgba($color-thirdy, .8) 0%,
+    rgba($color-thirdy, .6) 35%,
+    rgba($color-thirdy, .2) 100%,
+    );
+.header-bg-contact {
+    background:$header-bg-color, url(../../assets/img/banner-contact.jpg) no-repeat center;
+    background-size: cover;
+}
 .wrrr {
     @include header-section;
 }
 .contact-container {
-    &__header {
-        background: linear-gradient(
-        180deg, 
-        rgba($color-thirdy, .8) 0%,
-        rgba($color-thirdy, .6) 35%,
-        rgba($color-thirdy, .4) 100%,
-        ), url(../../assets/img/banner-contact.jpg) no-repeat center center;
-        background-size: cover;
-        height: 250px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-bottom: 3rem;
-
-        h1 {
-            color: #fff;
-            font-size: clamp(2rem, 3vw, 3rem);
-            text-align: center;
-        }
-    }
 
     &__inf {
         text-align: center;

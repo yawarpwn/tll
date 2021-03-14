@@ -35,9 +35,9 @@
 <body>
   <div class="close-side">
     <div class="webside"></div>
-    <div class="navbar-container">
+    <div class="navbar">
       <div class="wrapper">
-        <div class="navbar">
+        <div class="navbar__container">
           <div class="navbar__toggle">
             <div class="btn-menu" id="btn-menu">
               <span></span>
@@ -147,85 +147,94 @@
       </div>
     </div>
 
-    <section class="contact-container">
-      <div class="contact-container__header">
+    <!--Main Section-->
+    <section class="main-section">
+      <div class="main-section__header header-bg-contact">
         <div class="wrapper">
-          <h1>Contacta con nosotros</h1>
-        </div>
-      </div> 
-      <div>
-        <div class="wrapper">
-          <div class="contact">
-            <div class="contact__info">
-              <figure>
-                <img src="../assets/img/contacto-tell.jpg"  alt="">
-              </figure>
-            </div>
-            <div class="contact__form">
-              <h3 style="margin: 1rem 0rem;">¿Tienes algun preguntar?</h3>
-              <div class="contact__content">
-                <div role="form">
-                  <form class="contact-form">
-                    <div class="contact__row flex flex-col md:flex-row">
-                      <div style="margin-bottom: 20px;">
-                        <label for="">
-                          Nombre
-                          <sup style="color:red">*</sup>
-                        </label>
-                        <span>
-                          <input class="contact__input-text" type="text" id="contact-name">
-                        </span>
-                      </div>
-                      <div style="margin-bottom: 20px;">
-                        <label for="">
-                          Email
-                          <sup style="color:red">*</sup>
-                        </label>
-                        <span>
-                          <input class="contact__input-text" type="email" id="contact-email">
-                        </span>
-                      </div>
-                    </div>
-                    <div class="contact__row">
-                      <div style="margin-bottom: 20px;">
-                        <label for="">
-                          Telefono 
-                          <sup style="color:red">*</sup>
-                        </label>
-                        <span>
-                          <input class="contact__input-text" type="tel" id="contact-phone">
-                        </span>
-                      </div>
-                    </div>
-                    <div class="contact__row">
-                      <div style="margin-bottom: 20px;">
-                        <label for="">
-                          Tu Mensaje 
-                          <sup style="color:red">*</sup>
-                        </label>
-                        <span>
-                          <textarea class="contact__input-textarea" name="" id="contact-message" cols="40" rows="10"></textarea>
-                        </span>
-                      </div>
-                      <p class="" style="width: 100%;">
-                      <input class=" contact__input-submit" type="submit" value="Enviar pregunta">
-                      </p>
-                    </div>
-                  </form>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="contact-container__inf">
-            <p>Estamos aquí para ayudarte, si quieres que te aconsejemos o necesitas medidas especiales...</p>
-            <p>Llámanos : 971 531 018 / 992 536 019</p>
-            <p>Lunes a viernes de 9:00 a  19:00 h.</p>
-            <p>tellsenales@gmail.com</p>
-            <button class="btn btn--secondary">contacta con nosotros</button>
+          <div class="div">
+            Contacta con Nosotros
           </div>
         </div>
       </div>
+      <div class="main-section__body">
+        <section class="contact-container">
+          <div>
+            <div class="wrapper">
+              <div class="contact">
+                <div class="contact__info">
+                  <figure>
+                    <img src="../assets/img/contacto-tell.jpg"  alt="">
+                  </figure>
+                </div>
+                <div class="contact__form">
+                  <h3 style="margin: 1rem 0rem;">¿Tienes algun preguntar?</h3>
+                  <div class="contact__content">
+                    <div role="form">
+                      <form class="contact-form">
+                        <div class="contact__row flex flex-col md:flex-row">
+                          <div style="margin-bottom: 20px;">
+                            <label for="">
+                              Nombre
+                              <sup style="color:red">*</sup>
+                            </label>
+                            <span>
+                              <input class="contact__input-text" type="text" id="contact-name">
+                            </span>
+                          </div>
+                          <div style="margin-bottom: 20px;">
+                            <label for="">
+                              Email
+                              <sup style="color:red">*</sup>
+                            </label>
+                            <span>
+                              <input class="contact__input-text" type="email" id="contact-email">
+                            </span>
+                          </div>
+                        </div>
+                        <div class="contact__row">
+                          <div style="margin-bottom: 20px;">
+                            <label for="">
+                              Telefono 
+                              <sup style="color:red">*</sup>
+                            </label>
+                            <span>
+                              <input class="contact__input-text" type="tel" id="contact-phone">
+                            </span>
+                          </div>
+                        </div>
+                        <div class="contact__row">
+                          <div style="margin-bottom: 20px;">
+                            <label for="">
+                              Tu Mensaje 
+                              <sup style="color:red">*</sup>
+                            </label>
+                            <span>
+                              <textarea class="contact__input-textarea" name="" id="contact-message" cols="40" rows="10"></textarea>
+                            </span>
+                          </div>
+                          <p class="" style="width: 100%;">
+                          <input class=" contact__input-submit" type="submit" value="Enviar pregunta">
+                          </p>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="contact-container__inf">
+                <p>Estamos aquí para ayudarte, si quieres que te aconsejemos o necesitas medidas especiales...</p>
+                <p>Llámanos : 971 531 018 / 992 536 019</p>
+                <p>Lunes a viernes de 9:00 a  19:00 h.</p>
+                <p>tellsenales@gmail.com</p>
+                <button class="btn btn--secondary">contacta con nosotros</button>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
     </section>
+    <!--End Main Section-->
+
 
     <div class="footer-logos">
       <div class="wrapper">

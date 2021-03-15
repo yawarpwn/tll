@@ -93,6 +93,12 @@ module.exports = {
       template: path.resolve((__dirname, '../', './src/public/sticker.html')),
     }),
 
+    new HtmlWebpackPlugin({
+      filename: "evacuacion.html",
+      title: "Evacuacion",
+      template: path.resolve((__dirname, '../', './src/public/evacuacion.html')),
+    }),
+
 
     new CleanWebpackPlugin(),
   ],

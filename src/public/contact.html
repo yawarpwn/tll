@@ -35,6 +35,8 @@
 <body>
   <div class="close-side">
     <div class="webside"></div>
+
+    <!--Navbar-->
     <div class="navbar">
       <div class="wrapper">
         <div class="navbar__container">
@@ -55,7 +57,7 @@
               </a>
             </li> 
             <li class="navbar__item">
-              <a href="./senales.html" class="navbar__link" id="btn-link1">
+              <a class="navbar__link" id="btn-link1">
                 <span class="navbar__text">Señales</span>
                 <span class="navbar__icon-sub-menu" id="btn-dropdown1" >
                   <i class="fas fa-chevron-down"></i>
@@ -63,32 +65,113 @@
               </a>
               <ul class="navbar__dropdown" id="dropdown1">
                 <li class="navbar__dropdown-item">
-                  <a href="./sticker.html" class="navbar__dropdown-link">
-                    <span class="navbar__dropdow-text">Sticker</span>
+                  <a class="navbar__dropdown-link" id="senales-seguridad-menu">
+                    <span class="navbar__dropdow-text">Señales Seguridad</span>
+                    <span class="navbar__icon-sub-menu navbar__icon-sub-menu--rotate" id="arrow-ss">
+                      <i class="fas fa-chevron-down"></i>
+                    </span>
+                  </a>
+                  <ul class="navbar__sub-dropdown" id="senales-seguridad-dropdown">
+                    <li class="navbar__sub-dropdown-item">
+                      <a href="./evacuacion.html" class="navbar__sub-dropdown-link">
+                        <span class="navbar__sub-dropdow-text">Señales Evacuación</span>
+                      </a>
+                    </li>
+                    <li class="navbar__sub-dropdown-item">
+                      <a href="./prevencion.html" class="navbar__sub-dropdown-link">
+                        <span class="navbar__sub-dropdow-text">Señales Prevención</span>
+                      </a>
+                    </li>
+                    <li class="navbar__sub-dropdown-item">
+                      <a href="./obligacion.html" class="navbar__sub-dropdown-link">
+                        <span class="navbar__sub-dropdow-text">Señales Obligación</span>
+                      </a>
+                    </li>
+                    <li class="navbar__sub-dropdown-item">
+                      <a href="./incendio.html" class="navbar__sub-dropdown-link">
+                        <span class="navbar__sub-dropdow-text">Lucha contra Incendio</span>
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="navbar__dropdown-item">
+                  <a class="navbar__dropdown-link">
+                    <span class="navbar__dropdow-text">Señales Covid-19</span>
+                    <!--<span class="navbar__icon-sub-menu navbar__icon-sub-menu--rotate" id="arrow-ss">-->
+                      <!--<i class="fas fa-chevron-down"></i>-->
+                    <!--</span>-->
                   </a>
                 </li>
                 <li class="navbar__dropdown-item">
-                  <a href="./pvc.html" class="navbar__dropdown-link">
-                    <span class="navbar__dropdow-text">Base pvc celtex</span>
+                  <a  class="navbar__dropdown-link" id="senales-fotoluminiscentes-menu">
+                    <span class="navbar__dropdow-text">Fotoluminiscentes</span>
+                    <span class="navbar__icon-sub-menu navbar__icon-sub-menu--rotate" id="arrow-sf">
+                      <i class="fas fa-chevron-down"></i>
+                    </span>
                   </a>
+                  <ul class="navbar__sub-dropdown"
+                      style="margin-top:120px;"
+                      id="senales-fotoluminiscentes-dropdown">
+                    <li class="navbar__sub-dropdown-item">
+                      <a href="./foto-evacuacion.html" class="navbar__sub-dropdown-link">
+                        <span class="navbar__sub-dropdow-text">Evacuación</span>
+                      </a>
+                    </li>
+                    <li class="navbar__sub-dropdown-item">
+                      <a href="./foto-incendio.html" class="navbar__sub-dropdown-link">
+                        <span class="navbar__sub-dropdow-text">Lucha contra incendio</span>
+                      </a>
+                    </li>
+                    <li class="navbar__sub-dropdown-item">
+                      <a href="./foto-prevención.html" class="navbar__sub-dropdown-link">
+                        <span class="navbar__sub-dropdow-text">Prevención</span>
+                      </a>
+                    </li>
+                  </ul>
                 </li>
                 <li class="navbar__dropdown-item">
-                  <a href="./fotoluminiscente.html" class="navbar__dropdown-link">
-                    <span class="navbar__dropdow-text">Fotoluminiscente</span>
-                  </a>
-                </li>
-                <li class="navbar__dropdown-item">
-                  <a href="./obras.html" class="navbar__dropdown-link">
+                  <a  class="navbar__dropdown-link">
                     <span class="navbar__dropdow-text">Señales para Obras</span>
+                    <!--<span class="navbar__icon-sub-menu navbar__icon-sub-menu--rotate" id="arrow-ss">-->
+                      <!--<i class="fas fa-chevron-down"></i>-->
+                    <!--</span>-->
                   </a>
                 </li>
                 <li class="navbar__dropdown-item">
-                  <a href="./transito.html" class="navbar__dropdown-link">
+                  <a class="navbar__dropdown-link" id="senales-transito-menu" >
                     <span class="navbar__dropdow-text">Señales de Tránsito</span>
+                    <span class="navbar__icon-sub-menu navbar__icon-sub-menu--rotate" id="arrow-st">
+                      <i class="fas fa-chevron-down"></i>
+                    </span>
                   </a>
+                  <ul class="navbar__sub-dropdown"
+                      id="senales-transito-dropdown"
+                      style="margin-top:240px;"
+                      >
+                    <li class="navbar__sub-dropdown-item">
+                      <a href="./transito-preventivas.html" class="navbar__sub-dropdown-link">
+                        <span class="navbar__sub-dropdow-text">Preventivas</span>
+                      </a>
+                    </li>
+                    <li class="navbar__sub-dropdown-item">
+                      <a href="./transito-reguladoras.html" class="navbar__sub-dropdown-link">
+                        <span class="navbar__sub-dropdow-text">Reguladoras</span>
+                      </a>
+                    </li>
+                    <li class="navbar__sub-dropdown-item">
+                      <a href="./transito-informativa.html" class="navbar__sub-dropdown-link">
+                        <span class="navbar__sub-dropdow-text">Informativas</span>
+                      </a>
+                    </li>
+                    <li class="navbar__sub-dropdown-item">
+                      <a href="./transito-mas.html" class="navbar__sub-dropdown-link">
+                        <span class="navbar__sub-dropdow-text">Mas</span>
+                      </a>
+                    </li>
+                  </ul>
                 </li>
                 <li class="navbar__dropdown-item">
-                  <a href="./aluminio.html" class="navbar__dropdown-link">
+                  <a  class="navbar__dropdown-link">
                     <span class="navbar__dropdow-text">Señales de Aluminio</span>
                   </a>
                 </li>

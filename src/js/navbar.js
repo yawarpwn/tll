@@ -40,6 +40,8 @@ burgerBtn.addEventListener('click', mobileMenu)
 const senalesMenu = document.getElementById('btn-link1')
 const seguridadMenu = document.getElementById('btn-link2')
 const ssm = document.getElementById('senales-seguridad-menu')
+const sfm = document.getElementById('senales-fotoluminiscentes-menu')
+const stm = document.getElementById('senales-transito-menu')
 
 senalesMenu.addEventListener('click', () => {
   const dropSenales = document.getElementById('btn-dropdown1')
@@ -53,10 +55,28 @@ seguridadMenu.addEventListener('click', () => {
   document.getElementById('dropdown2').classList.toggle('navbar__dropdown--active')
 })
 
+//Sub dropdown funtion
 ssm.addEventListener('click', () => {
   const ar = document.getElementById('arrow-ss')
   ar.classList.toggle('navbar__icon-sub-menu--active')
   document.getElementById('senales-seguridad-dropdown').classList.toggle('navbar__sub-dropdown--active')
+})
+
+sfm.addEventListener('click', () => {
+  const ar = document.getElementById('arrow-sf')
+  const dd = document.getElementById('senales-fotoluminiscentes-dropdown')
+  dd.style.marginTop = '0px'
+  dd.classList.toggle('navbar__sub-dropdown--active')
+  ar.classList.toggle('navbar__icon-sub-menu--active')
+})
+
+
+stm.addEventListener('click', () => {
+  const ar = document.getElementById('arrow-st')
+  const dd = document.getElementById('senales-transito-dropdown')
+  dd.style.marginTop = '0px'
+  dd.classList.toggle('navbar__sub-dropdown--active')
+  ar.classList.toggle('navbar__icon-sub-menu--active')
 })
 
 window.addEventListener('scroll', () => {

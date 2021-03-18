@@ -117,6 +117,24 @@ module.exports = {
       template: path.resolve((__dirname, '../', './src/public/obligacion.html')),
     }),
 
+    new HtmlWebpackPlugin({
+      filename: "covid.html",
+      title: "Obligacion",
+      template: path.resolve((__dirname, '../', './src/public/covid.html')),
+    }),
+
+    new HtmlWebpackPlugin({
+      filename: "infocovid.html",
+      title: "Obligacion",
+      template: path.resolve((__dirname, '../', './src/public/infocovid.html')),
+    }),
+
+    new HtmlWebpackPlugin({
+      filename: "piso.html",
+      title: "Obligacion",
+      template: path.resolve((__dirname, '../', './src/public/piso.html')),
+    }),
+
 
     new CleanWebpackPlugin(),
   ],

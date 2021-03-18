@@ -10,32 +10,6 @@ const mobileMenu = () => {
 
 burgerBtn.addEventListener('click', mobileMenu)
 
-//DropDown
-//const btnDropdown1 = document.getElementById('btn-dropdown1')
-//const btnDropdown2 = document.getElementById('btn-dropdown2')
-//const dropDown1 = document.getElementById('dropdown1')
-//const dropDown2 = document.getElementById('dropdown2')
-//const btnLink1 = document.getElementById('btn-link1')
-//const btnLink2 = document.getElementById('btn-link2')
-//const dropSseguridad = document.getElementById('dropdown-senales-seguridad')
-//const btnSseguridad = document.getElementById('btn-senales-seguridad') 
-
-//const btnDown = (e) => {
-  //dropDown1.classList.toggle('navbar__dropdown--active')
-  //btnDropdown1.classList.toggle('navbar__icon-sub-menu--active')
-  //event.preventDefault()
-//}
-//btnLink1.addEventListener('click', btnDown)
-
-//btnSseguridad.addEventListener('click', () => {
-  //btnSseguridad.classList.toggle('navbar__icon-sub-menu--active')
-  //dropSseguridad.classList.toggle('navbar__dropdown--active')
-//})
-
-//btnLink1.addEventListener('mouseover', () => {
-  //dropDown1.classList.toggle('navbar__dropdown--active')
-//})
-
 //DropDown Function
 const senalesMenu = document.getElementById('btn-link1')
 const seguridadMenu = document.getElementById('btn-link2')

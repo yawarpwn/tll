@@ -363,6 +363,8 @@ body {
 	&__toggle {
 		font-size: 1.3rem;
 		cursor: pointer;
+		display: flex;
+		align-items: center;
 	}
 
 	&__shopping-cart {

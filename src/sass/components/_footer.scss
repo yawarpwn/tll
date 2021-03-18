@@ -264,6 +264,7 @@
 			transform: translateY(-5px) scale(1.06);
 
 		}
+
 	}
 
 	figure {
@@ -281,5 +282,7 @@
 		display: block;
 		text-align: center;
 		border-bottom-right-radius: 8px;
+		padding: 3px 2px;
+		font-size: 0.8rem;
 	}
 }

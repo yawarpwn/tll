@@ -88,15 +88,33 @@ module.exports = {
 
 
     new HtmlWebpackPlugin({
-      filename: "sticker.html",
+      filename: "incendio.html",
       title: "Sticker",
-      template: path.resolve((__dirname, '../', './src/public/sticker.html')),
+      template: path.resolve((__dirname, '../', './src/public/incendio.html')),
     }),
 
     new HtmlWebpackPlugin({
       filename: "evacuacion.html",
       title: "Evacuacion",
       template: path.resolve((__dirname, '../', './src/public/evacuacion.html')),
+    }),
+
+    new HtmlWebpackPlugin({
+      filename: "prevencion.html",
+      title: "Prevencion",
+      template: path.resolve((__dirname, '../', './src/public/prevencion.html')),
+    }),
+
+    new HtmlWebpackPlugin({
+      filename: "prohibicion.html",
+      title: "Prohibicion",
+      template: path.resolve((__dirname, '../', './src/public/prohibicion.html')),
+    }),
+
+    new HtmlWebpackPlugin({
+      filename: "obligacion.html",
+      title: "Obligacion",
+      template: path.resolve((__dirname, '../', './src/public/obligacion.html')),
     }),
 
 

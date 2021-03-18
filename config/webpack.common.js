@@ -135,6 +135,29 @@ module.exports = {
       template: path.resolve((__dirname, '../', './src/public/piso.html')),
     }),
 
+    new HtmlWebpackPlugin({
+      filename: "obras.html",
+      title: "Obligacion",
+      template: path.resolve((__dirname, '../', './src/public/obras.html')),
+    }),
+
+    new HtmlWebpackPlugin({
+      filename: "transito-preventivas.html",
+      title: "Obligacion",
+      template: path.resolve((__dirname, '../', './src/public/transito-preventivas.html')),
+    }),
+
+    new HtmlWebpackPlugin({
+      filename: "transito-informativa.html",
+      title: "Obligacion",
+      template: path.resolve((__dirname, '../', './src/public/transito-informativa.html')),
+    }),
+
+    new HtmlWebpackPlugin({
+      filename: "transito-reguladoras.html",
+      title: "Obligacion",
+      template: path.resolve((__dirname, '../', './src/public/transito-reguladoras.html')),
+    }),
 
     new CleanWebpackPlugin(),
   ],

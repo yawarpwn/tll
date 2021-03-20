@@ -183,6 +183,60 @@ module.exports = {
       template: path.resolve((__dirname, '../', './src/public/aluminio.html')),
     }),
 
+    new HtmlWebpackPlugin({
+      filename: "bioseguridad.html",
+      title: "Bioseguridad",
+      template: path.resolve((__dirname, '../', './src/public/bioseguridad.html')),
+    }),
+
+    new HtmlWebpackPlugin({
+      filename: "vial.html",
+      title: "Vial",
+      template: path.resolve((__dirname, '../', './src/public/vial.html')),
+    }),
+
+    new HtmlWebpackPlugin({
+      filename: "accesorios.html",
+      title: "accesorios",
+      template: path.resolve((__dirname, '../', './src/public/accesorios.html')),
+    }),
+
+    new HtmlWebpackPlugin({
+      filename: "epp-cabeza.html",
+      title: "epp",
+      template: path.resolve((__dirname, '../', './src/public/epp-cabeza.html')),
+    }),
+
+    new HtmlWebpackPlugin({
+      filename: "epp-respiratoria.html",
+      title: "epp",
+      template: path.resolve((__dirname, '../', './src/public/epp-respiratoria.html')),
+    }),
+
+    new HtmlWebpackPlugin({
+      filename: "epp-manos.html",
+      title: "epp",
+      template: path.resolve((__dirname, '../', './src/public/epp-manos.html')),
+    }),
+
+    new HtmlWebpackPlugin({
+      filename: "epp-pies.html",
+      title: "epp",
+      template: path.resolve((__dirname, '../', './src/public/epp-pies.html')),
+    }),
+
+    new HtmlWebpackPlugin({
+      filename: "epp-visual.html",
+      title: "epp",
+      template: path.resolve((__dirname, '../', './src/public/epp-visual.html')),
+    }),
+
+    new HtmlWebpackPlugin({
+      filename: "epp-soldador.html",
+      title: "epp",
+      template: path.resolve((__dirname, '../', './src/public/epp-soldador.html')),
+    }),
+
     new CleanWebpackPlugin(),
   ],
 };

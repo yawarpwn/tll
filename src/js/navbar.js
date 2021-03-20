@@ -17,6 +17,7 @@ const ssm = document.getElementById('senales-seguridad-menu')
 const sfm = document.getElementById('senales-fotoluminiscentes-menu')
 const stm = document.getElementById('senales-transito-menu')
 const scm = document.getElementById('senales-covid-menu')
+const sepp = document.getElementById('seguridad-epp')
 
 senalesMenu.addEventListener('click', () => {
   const dropSenales = document.getElementById('btn-dropdown1')
@@ -28,6 +29,13 @@ seguridadMenu.addEventListener('click', () => {
   const dropSenales = document.getElementById('btn-dropdown2')
   dropSenales.classList.toggle('navbar__icon-sub-menu--active')
   document.getElementById('dropdown2').classList.toggle('navbar__dropdown--active')
+})
+
+//Senales Epp Dropdown
+sepp.addEventListener('click', () => {
+  const ar = document.getElementById('arrow-sepp')
+  ar.classList.toggle('navbar__icon-sub-menu--active')
+  document.getElementById('seguridad-epp-dropdown').classList.toggle('navbar__sub-dropdown--active')
 })
 
 //Senales SEguridad Dropdown

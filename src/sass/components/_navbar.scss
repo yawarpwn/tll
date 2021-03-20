@@ -105,6 +105,7 @@ body {
 
 	&__item {
 		width: 100%;
+		list-style: none;
 
 		@include desktop {
 			width: auto;

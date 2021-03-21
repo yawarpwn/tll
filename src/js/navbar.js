@@ -18,6 +18,7 @@ const sfm = document.getElementById('senales-fotoluminiscentes-menu')
 const stm = document.getElementById('senales-transito-menu')
 const scm = document.getElementById('senales-covid-menu')
 const sepp = document.getElementById('seguridad-epp')
+const svial = document.getElementById('seguridad-vial')
 
 senalesMenu.addEventListener('click', () => {
   const dropSenales = document.getElementById('btn-dropdown1')
@@ -31,11 +32,20 @@ seguridadMenu.addEventListener('click', () => {
   document.getElementById('dropdown2').classList.toggle('navbar__dropdown--active')
 })
 
+//Senales Vial Dropdown
+svial.addEventListener('click', () => {
+  const ar = document.getElementById('arrow-svial')
+  ar.classList.toggle('navbar__icon-sub-menu--active')
+  document.getElementById('seguridad-vial-dropdown').classList.toggle('navbar__sub-dropdown--active')
+})
+
 //Senales Epp Dropdown
 sepp.addEventListener('click', () => {
-  const ar = document.getElementById('arrow-sepp')
-  ar.classList.toggle('navbar__icon-sub-menu--active')
-  document.getElementById('seguridad-epp-dropdown').classList.toggle('navbar__sub-dropdown--active')
+  const arrow = document.getElementById('arrow-sepp')
+  const dd = document.getElementById('seguridad-epp-dropdown')
+  dd.style.marginTop = '0px'
+  dd.classList.toggle('navbar__sub-dropdown--active')
+  arrow.classList.toggle('navbar__icon-sub-menu--active')
 })
 
 //Senales SEguridad Dropdown

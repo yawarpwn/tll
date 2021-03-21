@@ -190,9 +190,21 @@ module.exports = {
     }),
 
     new HtmlWebpackPlugin({
-      filename: "vial.html",
-      title: "Vial",
-      template: path.resolve((__dirname, '../', './src/public/vial.html')),
+      filename: "cinta-reflectiva.html",
+      title: "cintas",
+      template: path.resolve((__dirname, '../', './src/public/cinta-reflectiva.html')),
+    }),
+
+    new HtmlWebpackPlugin({
+      filename: "cinta-antideslizante.html",
+      title: "cintas",
+      template: path.resolve((__dirname, '../', './src/public/cinta-antideslizante.html')),
+    }),
+
+    new HtmlWebpackPlugin({
+      filename: "cinta-seguridad.html",
+      title: "cintas",
+      template: path.resolve((__dirname, '../', './src/public/cinta-seguridad.html')),
     }),
 
     new HtmlWebpackPlugin({
@@ -235,6 +247,12 @@ module.exports = {
       filename: "epp-soldador.html",
       title: "epp",
       template: path.resolve((__dirname, '../', './src/public/epp-soldador.html')),
+    }),
+
+    new HtmlWebpackPlugin({
+      filename: "seguridad-vial.html",
+      title: "epp",
+      template: path.resolve((__dirname, '../', './src/public/seguridad-vial.html')),
     }),
 
     new CleanWebpackPlugin(),

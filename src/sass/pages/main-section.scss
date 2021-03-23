@@ -1,4 +1,6 @@
 .main-section {
+  background: rgba(247, 247, 247);
+  padding-bottom: 1rem;
   &__header {
     height: 250px;
     display: flex;
@@ -39,8 +41,9 @@
 
   &__content {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 0.4rem;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(auto, 1fr); 
+    gap: 0.3rem;
 
     @include desktop {
       grid-template-columns: repeat(6, 1fr);
@@ -71,153 +74,129 @@
 }
 
 .product {
-  position: relative;
-  box-shadow: 0 0 8px 1px rgba(0, 0, 0, 0.1);
-  border-radius: 4px;
   overflow: hidden;
-  min-height: 250px;
-  
-  @include desktop {
-    min-height: 280px;
-  }
-
+  background: #fff;
+  box-shadow: 0px 0px 8px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
 
   &__img {
-  }
+    position: relative;
+    }
 
   figure {
-    overflow: hidden;
     cursor: pointer;
-
-    @include desktop {
+    &:after {
+      content: '\f00e';
+      position: absolute;
+      width: 30px;
+      height: 30px;
+      display: block;
+      right: -80px;
+      top: 5;
+      background: $color-thirdy;
+      color: #fff;
+      font-family: 'Font Awesome 5 Free';
+      font-weight: 900;
+      font-style: normal;
+      text-align: center;
+      line-height: 30px;
+      transition: all 0.3s ease-in-out;
     }
 
     &:before {
+      content: 'COMPRAR';
       position: absolute;
-      content: 'Comprar'; 
-      padding: 0.5rem 0.3rem;
-      display: block;
-      width: 100%;
-      background-color: $color-thirdy;
       color: #fff;
-      left: 0;
-      bottom: -100%;
       text-align: center;
-      transition: all 0.3s ease;
-    }
-
-    &:after {
-      content:'\f002';
-      padding: 0.5rem;
-      font-family: 'Font Awesome 5 Free';
+      line-height: 30px;
+      width: 100%;
       background: $color-thirdy;
-      font-size: 1rem;
-      color: #fff;
-      position: absolute;
-      display: block;
-      top: 10;
-      right: -100%;
-      font-weight: 900;
-      transition: all 0.3s ease;
+      height: 30px;
+      bottom: -20px;
+      left: 0;
+      opacity: 0;
+      transition: all 0.3s ease-in-out;
     }
 
     &:hover {
-     &:before {
-       bottom: 0;
-     } 
-
-     &:after {
-       right: 10;
-     }
-    }
-  }
-  
-
-  img {
-    width: 100%;
-    height: auto;
-  }
-
-  &__shop {
-    display: flex;
-    padding: 6px;
-    align-items: center;
-
-    i {
-      width: 30px;
-      height: 30px;
-      background: $color-thirdy;
-      color: #fff;
-      line-height: 30px;
-      border-radius: 4px;
-      text-align: center;
-      margin-right: 0.3rem;
-      font-size: 0.7rem;
-
-      @include desktop {
-        margin-right: 0.6rem;
+      &:before {
+        bottom: 0;
+        opacity: 1;
       }
+    }
 
+    &:hover {
+      &:after {
+        right: 5px;
+      }
     }
     
+
+    img {
+      height: auto;
+    } 
   }
-  
-  //div:nth-child(1) {
-    //display: flex;
-    //flex-direction: column;
-  //}
 
   &__info {
-    color: $color-gray-dark-3;
-    display: flex;
-    justify-content: center;
+    padding: 0px 5px 5px 5px;
+    min-height: 70px;
   }
 
   &__tittle {
-    font-size: clamp(0.7rem, 1.5vw, 0.8rem);
-    text-transform: uppercase;
     text-align: center;
-    width: 100%;
-    max-height: 40px;
-    vertical-align: center;
-    line-height: 1rem;
-    color: $color-gray-dark-3;
-    padding: 5px 8px;
-    display: block;
-    align-items: center;
-    justify-content: center;
-  }
-
-  &__category {
-    font-size: 0.6rem;
+    font-size: clamp(0.75rem, 2vw, 0.8rem);
+    min-height: 25px;
+    overflow: hidden;
+    text-transform: uppercase;
 
     @include desktop {
-      font-size: 0.7rem;
+      min-height: 40px;
     }
   }
 
-  &__code {
-    font-size: 0.6rem;
-    font-weight: lighter;
-    color: $color-gray-dark-1;
-    text-transform: uppercase;
+  &__shop {
+    margin-top: 0.4rem;
+    display: flex;
+    text-transform: none;
+    text-align: left;
+  }
+
+  a {
+    height: 100%;
+    margin-right: 5px;
+
+    &:hover {
+      transform: scale(1.1) translateY(-5px);
+      transition: all 0.3s ;
+
+      i {
+        background: rgba(255, 150, 0);
+      }
+    }
+  }
+
+  i {
+    vertical-align: center;
+    background: $color-thirdy;
+    color: #fff;
+    padding: 10px;
+    border-radius: 4px;
+
+  }
+  
+  &__category {
+    color: gray;
+    font-size: clamp(0.55rem, 2vw, 0.7rem);
   }
 
   &__price {
-    color: $color-gray-dark-1;
     font-size: 0.5rem;
-
-    strong {
-      color: $color-primary;
-      font-size: 0.8rem;
-    }
-
-    @include desktop {
-      position: static;
-    }
+    color: $color-gray-dark-1;
   }
-}
 
-.btn-section {
-  border: 1px solid orange;
-}
+  strong {
+    color: $color-primary;
+    font-size: 0.8rem;
+    margin-right: 2px;
+  }
+} 
